@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/klcw/Documents/PPGitHub/PPStudyExamples/C++「西北工业大学-魏英」/CPP构造函数/main.cpp
+iostream
+-
+

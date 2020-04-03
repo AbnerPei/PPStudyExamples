@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30CA891DB016C9954A09BAF9 /* Pods_Flutter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514CA2C1FB2F9C4B12E4B7C4 /* Pods_Flutter_iOS.framework */; };
+		6865457E233B0370001141EC /* DemoFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6865457D233B0370001141EC /* DemoFlutterViewController.m */; };
 		68CFA3B42313E0BD0088CBD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFA3B32313E0BD0088CBD8 /* AppDelegate.m */; };
 		68CFA3B72313E0BD0088CBD8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CFA3B62313E0BD0088CBD8 /* ViewController.m */; };
 		68CFA3BA2313E0BD0088CBD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CFA3B82313E0BD0088CBD8 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* Begin PBXFileReference section */
 		3448DD2535FADD315BFBB2CD /* Pods-Flutter_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flutter_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Flutter_iOS/Pods-Flutter_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		514CA2C1FB2F9C4B12E4B7C4 /* Pods_Flutter_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flutter_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6865457C233B0370001141EC /* DemoFlutterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoFlutterViewController.h; sourceTree = "<group>"; };
+		6865457D233B0370001141EC /* DemoFlutterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoFlutterViewController.m; sourceTree = "<group>"; };
 		68CFA3AF2313E0BD0088CBD8 /* Flutter_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flutter_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CFA3B22313E0BD0088CBD8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68CFA3B32313E0BD0088CBD8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 				68CFA3BD2313E0BF0088CBD8 /* LaunchScreen.storyboard */,
 				68CFA3C02313E0BF0088CBD8 /* Info.plist */,
 				68CFA3C12313E0BF0088CBD8 /* main.m */,
+				6865457C233B0370001141EC /* DemoFlutterViewController.h */,
+				6865457D233B0370001141EC /* DemoFlutterViewController.m */,
 			);
 			path = Flutter_iOS;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6865457E233B0370001141EC /* DemoFlutterViewController.m in Sources */,
 				68CFA3B72313E0BD0088CBD8 /* ViewController.m in Sources */,
 				68CFA3C22313E0BF0088CBD8 /* main.m in Sources */,
 				68CFA3B42313E0BD0088CBD8 /* AppDelegate.m in Sources */,
