@@ -1,0 +1,6 @@
+framework module Pods_HeaderViewStretch {
+  umbrella header "Pods-HeaderViewStretch-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -51,7 +51,7 @@ Widget rootPage(String method){
       backgroundColor: Colors.white,
       body: Center(
         child: Container(
-          child: Text('混合开发Other', style: TextStyle(fontSize: 30)),
+          child: Text('混合开发Other456666', style: TextStyle(fontSize: 30)),
         ),
       ),
     );
