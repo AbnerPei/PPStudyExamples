@@ -8,7 +8,7 @@
 
 #import "SecondViewController.h"
 #import "RQShineLabel.h"
-
+#import "ThirdViewController.h"
 @interface SecondViewController ()
 @property (strong, nonatomic) RQShineLabel *shineLabel;
 @property (strong, nonatomic) NSArray *textArray;
@@ -74,25 +74,28 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
   [super touchesBegan:touches withEvent:event];
-  if (self.shineLabel.isVisible) {
-      [self.shineLabel fadeOutAnimated:YES completion:^{
-      [self changeText];
-      [UIView animateWithDuration:2.5 animations:^{
-        if (self.wallpaper1.alpha > 0.1) {
-          self.wallpaper1.alpha = 0;
-          self.wallpaper2.alpha = 1;
-        }
-        else {
-          self.wallpaper1.alpha = 1;
-          self.wallpaper2.alpha = 0;
-        }
-      }];
-      [self.shineLabel shine];
-    }];
-  }
-  else {
-    [self.shineLabel shine];
-  }
+//  if (self.shineLabel.isVisible) {
+//      [self.shineLabel fadeOutAnimated:YES completion:^{
+//      [self changeText];
+//      [UIView animateWithDuration:2.5 animations:^{
+//        if (self.wallpaper1.alpha > 0.1) {
+//          self.wallpaper1.alpha = 0;
+//          self.wallpaper2.alpha = 1;
+//        }
+//        else {
+//          self.wallpaper1.alpha = 1;
+//          self.wallpaper2.alpha = 0;
+//        }
+//      }];
+//      [self.shineLabel shine];
+//    }];
+//  }
+//  else {
+//    [self.shineLabel shine];
+//  }
+    
+    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
+    [self.navigationController pushViewController:thirdVC animated:YES];
 }
 
 - (void)changeText
@@ -142,6 +145,18 @@
 {
     [super viewDidDisappear:animated];
     NSLog(@"%s",__func__);
+    [self removeSelf];
 }
 
+
+- (void)removeSelf
+{
+    NSMutableArray *viewControllers = self.navigationController.viewControllers.mutableCopy;
+    for (UIViewController *viewController in self.navigationController.viewControllers) {
+        if ([viewController isEqual:self]) {
+            [viewControllers removeObject:viewController];
+        }
+    }
+    self.navigationController.viewControllers = [viewControllers copy];
+}
 @end

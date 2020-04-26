@@ -19,6 +19,7 @@
 		688463642435D5E800F20901 /* RQShineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 688463632435D5E800F20901 /* RQShineLabel.m */; };
 		688463662435D75200F20901 /* wallpaper1.png in Resources */ = {isa = PBXBuildFile; fileRef = 688463652435D75200F20901 /* wallpaper1.png */; };
 		688463682435D75A00F20901 /* wallpaper2.png in Resources */ = {isa = PBXBuildFile; fileRef = 688463672435D75A00F20901 /* wallpaper2.png */; };
+		68BDFC7324556E1B004E96A2 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDFC7224556E1B004E96A2 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,9 @@
 		688463632435D5E800F20901 /* RQShineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQShineLabel.m; sourceTree = "<group>"; };
 		688463652435D75200F20901 /* wallpaper1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallpaper1.png; sourceTree = "<group>"; };
 		688463672435D75A00F20901 /* wallpaper2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallpaper2.png; sourceTree = "<group>"; };
+		68BDFC7024556DEF004E96A2 /* Tips #在最后一个VC里移除自己，最好在viewDidDisappear里移除.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Tips #在最后一个VC里移除自己，最好在viewDidDisappear里移除.md"; sourceTree = "<group>"; };
+		68BDFC7124556E1B004E96A2 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		68BDFC7224556E1B004E96A2 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		6884633924347CD500F20901 /* API_UIViewControllerExample */ = {
 			isa = PBXGroup;
 			children = (
+				68BDFC6F24556D37004E96A2 /* Notes */,
 				6884635324347FDC00F20901 /* ViewControllers */,
 				6884633A24347CD500F20901 /* AppDelegate.h */,
 				6884633B24347CD500F20901 /* AppDelegate.m */,
@@ -101,8 +106,18 @@
 				6884635524347FFD00F20901 /* FirstViewController.m */,
 				688463572434800F00F20901 /* SecondViewController.h */,
 				688463582434800F00F20901 /* SecondViewController.m */,
+				68BDFC7124556E1B004E96A2 /* ThirdViewController.h */,
+				68BDFC7224556E1B004E96A2 /* ThirdViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		68BDFC6F24556D37004E96A2 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				68BDFC7024556DEF004E96A2 /* Tips #在最后一个VC里移除自己，最好在viewDidDisappear里移除.md */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +194,7 @@
 			files = (
 				688463592434800F00F20901 /* SecondViewController.m in Sources */,
 				6884634224347CD500F20901 /* ViewController.m in Sources */,
+				68BDFC7324556E1B004E96A2 /* ThirdViewController.m in Sources */,
 				6884633C24347CD500F20901 /* AppDelegate.m in Sources */,
 				688463642435D5E800F20901 /* RQShineLabel.m in Sources */,
 				6884635624347FFD00F20901 /* FirstViewController.m in Sources */,
