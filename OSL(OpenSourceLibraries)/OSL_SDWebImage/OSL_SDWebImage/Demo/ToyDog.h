@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ToyDog (Sing)
 
 ///唱英文歌的
+///
+///参考链接：https://www.jianshu.com/p/59b218a881a4
 @property (nonatomic, class, nonnull, readonly) ToyDog *singEnglishSongs;
 
 ///唱中文歌的
