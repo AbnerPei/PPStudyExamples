@@ -14,6 +14,12 @@
 		68512C58247E61D100F23EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68512C57247E61D100F23EF5 /* Assets.xcassets */; };
 		68512C5B247E61D100F23EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68512C59247E61D100F23EF5 /* LaunchScreen.storyboard */; };
 		68512C5E247E61D100F23EF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68512C5D247E61D100F23EF5 /* main.m */; };
+		68512C67247F460700F23EF5 /* KLModalanimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68512C66247F460700F23EF5 /* KLModalanimationController.m */; };
+		68512C6A247F476100F23EF5 /* KLModalTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68512C69247F476100F23EF5 /* KLModalTransitioningDelegate.m */; };
+		68512C6D247F47DE00F23EF5 /* KLModalInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68512C6C247F47DE00F23EF5 /* KLModalInteractiveTransition.m */; };
+		68512C78247F897700F23EF5 /* KLModalPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68512C77247F897700F23EF5 /* KLModalPresentationController.m */; };
+		68512C7C247F8E2900F23EF5 /* KLModalBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68512C7B247F8E2900F23EF5 /* KLModalBackgroundView.m */; };
+		68FEF2DB247FAF4300E432AC /* UIViewController+KLModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FEF2DA247FAF4300E432AC /* UIViewController+KLModal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,20 @@
 		68512C5A247E61D100F23EF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68512C5C247E61D100F23EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68512C5D247E61D100F23EF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68512C65247F460700F23EF5 /* KLModalanimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLModalanimationController.h; sourceTree = "<group>"; };
+		68512C66247F460700F23EF5 /* KLModalanimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLModalanimationController.m; sourceTree = "<group>"; };
+		68512C68247F476100F23EF5 /* KLModalTransitioningDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLModalTransitioningDelegate.h; sourceTree = "<group>"; };
+		68512C69247F476100F23EF5 /* KLModalTransitioningDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLModalTransitioningDelegate.m; sourceTree = "<group>"; };
+		68512C6B247F47DE00F23EF5 /* KLModalInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLModalInteractiveTransition.h; sourceTree = "<group>"; };
+		68512C6C247F47DE00F23EF5 /* KLModalInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLModalInteractiveTransition.m; sourceTree = "<group>"; };
+		68512C6F247F653100F23EF5 /* KLModalPresentationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLModalPresentationProtocol.h; sourceTree = "<group>"; };
+		68512C73247F6A1400F23EF5 /* KLModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLModal.h; sourceTree = "<group>"; };
+		68512C76247F897700F23EF5 /* KLModalPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLModalPresentationController.h; sourceTree = "<group>"; };
+		68512C77247F897700F23EF5 /* KLModalPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLModalPresentationController.m; sourceTree = "<group>"; };
+		68512C7A247F8E2900F23EF5 /* KLModalBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLModalBackgroundView.h; sourceTree = "<group>"; };
+		68512C7B247F8E2900F23EF5 /* KLModalBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLModalBackgroundView.m; sourceTree = "<group>"; };
+		68FEF2D9247FAF4300E432AC /* UIViewController+KLModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KLModal.h"; sourceTree = "<group>"; };
+		68FEF2DA247FAF4300E432AC /* UIViewController+KLModal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KLModal.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +81,7 @@
 		68512C4A247E61CA00F23EF5 /* API_CustomTransitions */ = {
 			isa = PBXGroup;
 			children = (
+				68512C64247F456900F23EF5 /* KLModal */,
 				68512C4B247E61CA00F23EF5 /* AppDelegate.h */,
 				68512C4C247E61CA00F23EF5 /* AppDelegate.m */,
 				68512C4E247E61CA00F23EF5 /* SceneDelegate.h */,
@@ -74,6 +95,43 @@
 				68512C5D247E61D100F23EF5 /* main.m */,
 			);
 			path = API_CustomTransitions;
+			sourceTree = "<group>";
+		};
+		68512C64247F456900F23EF5 /* KLModal */ = {
+			isa = PBXGroup;
+			children = (
+				68FEF2D8247FAF0700E432AC /* KLMoadlCategories */,
+				68512C79247F8DF700F23EF5 /* KLModalViews */,
+				68512C65247F460700F23EF5 /* KLModalanimationController.h */,
+				68512C66247F460700F23EF5 /* KLModalanimationController.m */,
+				68512C68247F476100F23EF5 /* KLModalTransitioningDelegate.h */,
+				68512C69247F476100F23EF5 /* KLModalTransitioningDelegate.m */,
+				68512C6B247F47DE00F23EF5 /* KLModalInteractiveTransition.h */,
+				68512C6C247F47DE00F23EF5 /* KLModalInteractiveTransition.m */,
+				68512C6F247F653100F23EF5 /* KLModalPresentationProtocol.h */,
+				68512C73247F6A1400F23EF5 /* KLModal.h */,
+				68512C76247F897700F23EF5 /* KLModalPresentationController.h */,
+				68512C77247F897700F23EF5 /* KLModalPresentationController.m */,
+			);
+			path = KLModal;
+			sourceTree = "<group>";
+		};
+		68512C79247F8DF700F23EF5 /* KLModalViews */ = {
+			isa = PBXGroup;
+			children = (
+				68512C7A247F8E2900F23EF5 /* KLModalBackgroundView.h */,
+				68512C7B247F8E2900F23EF5 /* KLModalBackgroundView.m */,
+			);
+			path = KLModalViews;
+			sourceTree = "<group>";
+		};
+		68FEF2D8247FAF0700E432AC /* KLMoadlCategories */ = {
+			isa = PBXGroup;
+			children = (
+				68FEF2D9247FAF4300E432AC /* UIViewController+KLModal.h */,
+				68FEF2DA247FAF4300E432AC /* UIViewController+KLModal.m */,
+			);
+			path = KLMoadlCategories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				68512C53247E61CA00F23EF5 /* ViewController.m in Sources */,
+				68FEF2DB247FAF4300E432AC /* UIViewController+KLModal.m in Sources */,
+				68512C6A247F476100F23EF5 /* KLModalTransitioningDelegate.m in Sources */,
+				68512C7C247F8E2900F23EF5 /* KLModalBackgroundView.m in Sources */,
 				68512C4D247E61CA00F23EF5 /* AppDelegate.m in Sources */,
 				68512C5E247E61D100F23EF5 /* main.m in Sources */,
+				68512C6D247F47DE00F23EF5 /* KLModalInteractiveTransition.m in Sources */,
+				68512C67247F460700F23EF5 /* KLModalanimationController.m in Sources */,
+				68512C78247F897700F23EF5 /* KLModalPresentationController.m in Sources */,
 				68512C50247E61CA00F23EF5 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
