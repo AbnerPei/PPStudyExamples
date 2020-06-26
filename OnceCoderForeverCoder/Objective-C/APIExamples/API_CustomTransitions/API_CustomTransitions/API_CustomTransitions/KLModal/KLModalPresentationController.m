@@ -38,7 +38,7 @@
     [self.containerView addSubview:self.presentedView];
     
     if (self.presentedVC && [self.presentedVC respondsToSelector:@selector(allowScreenEdgeInteractive)]) {
-        <#statements#>
+        
     }
     
 }

@@ -60,7 +60,8 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     FirstViewController *firstVC = [[FirstViewController alloc] init];
-    [self.navigationController pushViewController:firstVC animated:YES];
+//    [self.navigationController pushViewController:firstVC animated:YES];
+    [self presentViewController:firstVC animated:YES completion:nil];
 }
 
 /**

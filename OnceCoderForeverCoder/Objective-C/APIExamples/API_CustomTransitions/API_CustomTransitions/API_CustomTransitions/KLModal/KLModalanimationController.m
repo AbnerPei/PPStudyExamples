@@ -12,7 +12,7 @@
 @interface KLModalanimationController ()
 
 @property (nonatomic, assign) KLModalType modalType;
-@property (nonatomic, assign) KLModalInteractiveStyle interactiveStyle;
+@property (nonatomic, assign) KLModalDismissInteractiveStyle interactiveStyle;
 
 @end
 
@@ -23,7 +23,7 @@
     self = [super init];
     if (self) {
         _modalType = modalType;
-        _interactiveStyle = interactiveStyle;
+        _interactiveStyle = dismissInteractiveStyle;
     }
     return self;
 }
